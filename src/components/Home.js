@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import ImportFromFileBodyComponent from './ImportFromFileBodyComponent';
 import { parseDataAction } from '../actions';
 import Header from './Header';
+import WordCloudCanvas from './WordCloudCanvas';
 
 class Home extends Component {
 
@@ -13,12 +14,13 @@ class Home extends Component {
         <Header />
         <div className="container">
           <Jumbotron>
-            <h1>Whatsapp parse</h1>
+            <h1>Whatsapp Chat Parser</h1>
             <p>
-              Select an exported whatsapp chat text file.
+              Select an exported whatsapp chat text file, to see the word cloud below.
             </p>
             <ImportFromFileBodyComponent/>
           </Jumbotron>
+          <WordCloudCanvas wordCloudData={this.props.parsed_data}/>
           {/* <pre>{JSON.stringify(this.props.parsed_data)}</pre> */}
         </div>
       </div>
