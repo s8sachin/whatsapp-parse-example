@@ -1,8 +1,8 @@
 {
   "name": "whatsapp-parse-example",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
-  "homepage": "http://whatsapp-chat-parser.ga",
+  "homepage": "https://s8sachin.github.io/whatsapp-parse-example",
   "dependencies": {
     "react": "^16.4.2",
     "react-bootstrap": "^0.32.3",
